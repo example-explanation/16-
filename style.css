@@ -1,0 +1,52 @@
+h1{
+  border: 2px solid black;
+  padding: 1px;
+  display: inline-block;
+}
+/* button{
+  margin: 0 20px;
+  margin-top: 10px;
+} */
+#app{
+  max-width: 350px;   /* PCで横に広がりすぎない */
+  margin: 0 auto;     /* 常に横中央 */
+  padding: 12px;
+}
+/*終了時に大きく見やすく中央に*/
+#app.end{
+  text-align: center;
+  padding: 18px 15px;
+}
+/*問題の終了を知らせる*/
+#app.end #question{
+  display: block;
+  width: fit-content;
+  margin: 14px auto 12px;
+  padding: 14px 18px;
+  font-size: 28px;
+  font-weight: 800;
+  border: 3px solid #222;
+  border-radius: 12px;
+  background: #fff4c2;
+  white-space: nowrap;
+  word-break: keep-all;
+  line-break: strict;
+}
+/*結果を見やすく*/
+#app.end #result{
+  margin-top: 10px;
+  font-size: 36px;
+  font-weight: 900;
+  color: #0a7;
+}
+#app.end button{
+  opacity: 0.6;
+}
+button {
+  margin: 0 20px;
+  margin-top: 10px;
+
+  font-size: clamp(14px, 2.5vw, 20px);
+  padding: clamp(6px, 1.5vw, 14px) clamp(12px, 3vw, 24px);
+  border-radius: 25px;
+}
